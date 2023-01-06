@@ -1,5 +1,5 @@
 import * as path from "path";
-import { SWING_FILE } from "./constants";
+import { SWING_FILE } from "./extension-settings.js";
 import { getCandidateMarkupFilenames } from "./preview/languages/markup";
 
 export const api = {
