@@ -1,10 +1,8 @@
-# CodeSwing 🎢
-
-CodeSwing is an interactive coding playground for VS Code, that allows you to build/explore/learn rich web applications ("swings"). It's like having the magic of a traditional web playground (e.g. CodePen, JSFiddle), but available directly from your highly-personalized editor: themes, keybindings, and extensions...oh my! When you create swings, you can use your favorite web languages (HTML/Pug, CSS/SCSS/Less, JS/TS) and libraries (React, Vue, Angular, etc.) and have a live preview <ins>as you type</ins>, without needing to worry about compiling or bundling anything. It's like a visual REPL for managing runnable code snippets.
+# Stealify 🎢
 
 <img width="800px" src="https://user-images.githubusercontent.com/116461/103024429-ae37a480-4504-11eb-85ea-37ba9b9a4d9a.gif" />
 
-CodeSwing supports [template galleries](#template-galleries), which allows you to create re-usable swing templates. When you're happy with a swing, you can also [export it to CodePen](#codepen) in order to share it with the world! Finally, since CodeSwing is a VS Code extension, it can integrate with other VS Code extensions, to enable compelling scenarios such as [managing your swings as GitHub Gists](#gistpad), [recording guided walkthroughs of your swings](#codetour), and [collaborating on a swing in real-time](#live-share). If that doesn't sound fun, then I don't know what is!
+supports [template galleries](#template-galleries), which allows you to create re-usable swing templates. When you're happy with a swing, you can also [export it to CodePen](#codepen) in order to share it with the world! Finally, since CodeSwing is a VS Code extension, it can integrate with other VS Code extensions, to enable compelling scenarios such as [managing your swings as GitHub Gists](#gistpad), [recording guided walkthroughs of your swings](#codetour), and [collaborating on a swing in real-time](#live-share). If that doesn't sound fun, then I don't know what is!
 
 <!--prettier-ignore-->
 > _**What's the meaning of the name "swing"?** As the extension's logo implies, it's referring to a [swing](<https://en.wikipedia.org/wiki/Swing_(seat)>) on playground, to elicit the idea of having fun. That said, if you interpret "swing" as the dance style, that's totally cool too! 💃_
@@ -119,13 +117,13 @@ When you create/open a swing, this activates the "swing toolbar", which is a col
 
 <img width="464" src="https://user-images.githubusercontent.com/116461/71629353-eafee300-2bb1-11ea-88f0-0996ab6149c4.png" />
 
-### Workspace swings
+### Workspace
 
-If you open a directory in VS Code, and that directory represents a swing, then the swing environment will be automatically launched. If you accidentally close the CodeSwing preview, then you can re-open it by either reloading VS Code, or running the "CodeSwing: Re-Open Workspace Swing" command.
+If you open a directory in VS Code, and that directory represents a swing, then the swing environment will be automatically launched. If you accidentally close the CodeSwing preview, then you can re-open it by either reloading VS Code, or running the ": Re-Open Workspace Swing" command.
 
-### CodeSwing tree view
+### tree view
 
-When you create or open a swing, a new tree view called "CodeSwing" will appear on the "Explorer" tab (though you can move it to anywhere you want!). It will display the list of files in the active swing, and allow you to edit them.
+When you create or open a .stealify file, a new tree view called "CodeSwing" will appear on the "Explorer" tab (though you can move it to anywhere you want!). It will display the list of files in the active swing, and allow you to edit them.
 
 If you open a swing directory as a workspace, then the "CodeSwing" tree won't appear, since it would be duplicative of the "Explorer" tree itself. Therefore, the "CodeSwing" tree is meant to accommodate temporary swings, swings you open from directories other than the active VS Code workspace, or swings you load from [gists](#gistpad).
 
@@ -167,7 +165,7 @@ CodeSwing includes integration with [CodeTour](https://aka.ms/codetour), which a
 
 ### Live Share
 
-If you'd like to collaborate with someone on a swing (e.g. doing a technical interview or remote tutoring session), then you can install the [Live Share](https://aka.ms/vsls) extension, start a session, and then co-edit your swing in real-time. Note that Live Share support is currently limited to [workspace swings](#workspace-swings). Temporary swings, and swings opened from GistPad (i.e. stored in a gist) aren't currently supported.
+If you'd like to collaborate with someone on a swing (e.g. doing a technical interview or remote tutoring session), then you can install the [Live Share](https://aka.ms/vsls) extension, start a session, and then co-edit your swing in real-time. Note that Live Share support is currently limited to [workspace swings](#workspace). Temporary, and opened from GistPad (i.e. stored in a gist) aren't currently supported.
 
 <img width="700px" src="https://user-images.githubusercontent.com/116461/103246112-2d6b1500-4917-11eb-98af-cfbda51b1ace.gif" />
 
